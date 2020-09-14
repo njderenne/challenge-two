@@ -118,7 +118,7 @@ header nav ul li a:hover {
 }
 
 .about-img img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .about-text {
@@ -382,35 +382,36 @@ footer div {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
+
     }
 
     header nav ul li a {
         font-size: 20px;
     }
 
-    .hero-form {
-        width: 100%;
-    }
-
     .about {
         display: block;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .about-img img {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: 50px;
+        width: 200%;
     }
 
     .about-text {
         display: block;
         align-items: center;
         justify-content: center;
+        margin: 35px auto;
+        width: 90%;
     }
-
-
-
-
-
-
-
-
 
     .project {
         margin: 15px auto 25px auto;
@@ -444,33 +445,152 @@ footer div {
     .project-1-text {
         display: grid;
         grid-column: 1/ span 3;
-        grid-row: 2;
+        grid-row: 1;
         padding-left: 10px;
         padding-top: 5px;
         text-align: center;
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     
+    .project-buttons {
+        grid-row: 2;
+        grid-column: 1/ span 5;
+        justify-content: center;
+        width: 100%;
+    }
+
     .project-1-demo {
         display: grid;
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
+        width: 80%;
+        margin: 0 0 15px 0;
+        align-items: center;
     }
     
     .project-1-code {
         display: grid;
         grid-column: 2;
         grid-row: 3;
-
+        width: 80%;
+        margin: 0;
+        align-items: center;
     }
     
     .project-1-img img {
         display: grid;
         width: 100%;
-        grid-row: 1;
+        grid-row: 0;
         grid-column: 1;
     }
     
+    .project-2-text {
+        display: grid;
+        grid-column: 1/ span 3;
+        grid-row: 2;
+        padding-left: 10px;
+        padding-top: 5px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: 5px solid black;
+    }
 
+    .project-2-demo {
+        display: grid;
+        grid-column: 1;
+        grid-row: 5;
+        width: 80%;
+        margin: 0 0 15px 0;
+        align-items: center;
+    }
+    
+    .project-2-code {
+        display: grid;
+        grid-column: 2;
+        grid-row: 5;
+        width: 80%;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .project-2-img img {
+        display: grid;
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+
+
+
+    .project-3-text {
+        display: grid;
+        grid-column: 1/ span 3;
+        grid-row: 1;
+        padding-left: 10px;
+        padding-top: 5px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .project-3-demo {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        width: 80%;
+        margin: 0 0 15px 0;
+        align-items: center;
+    }
+    
+    .project-3-code {
+        display: grid;
+        grid-column: 2;
+        grid-row: 3;
+        width: 80%;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .project-3-img img {
+        display: grid;
+        width: 100%;
+        grid-row: 0;
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .about-img img {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: 30px;
+        width: 200%;
+    }
+
+    .contact-form input, .contact-form textarea {
+        border: 1px solid black;
+        border-radius: 10px;
+        display: block;
+        padding: 7px 15px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        background-color:  rgba(255, 255, 255, .75);
+        width: 100%;
+    }
 }
