@@ -32,6 +32,7 @@ header h1 {
     font-weight: bold;
     margin-left: 6%;
     font-size: 36px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav {
@@ -46,12 +47,24 @@ header nav ul {
     list-style-type: none;
 }
 
+header nav ul li {
+    padding: 0 15px;
+}
+
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 28px;
     text-decoration: none;
     color: azure;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background:azure;
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 .hero {
@@ -150,99 +163,133 @@ header nav ul li a {
     grid-column: 2/ span 5;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
+
 }
 
 .project-1-text {
     display: grid;
-    border: 5px solid white;
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .project-1-demo {
     display: grid;
-    border: 5px solid orange;
     grid-column: 3;
     grid-row: 1;
+    width: 66%;
+    padding-left: 18%;
     margin-top: 20%;
     margin-bottom: 15%;
 }
 
 .project-1-code {
     display: grid;
-    border: 5px solid purple;
     grid-column: 3;
     grid-row: 1;
+    width: 66%;
+    padding-left: 18%;
 }
 
 .project-1-img img {
     display: flex;
     max-height: 350px;
-    border: 5px solid black;
     grid-row: 1;
     grid-column: 1/ span 2;
 }
 
 .project-2-text {
     display: grid;
-    border: 5px solid white;
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .project-2-demo {
     display: grid;
-    border: 5px solid orange;
     grid-column: 3;
     grid-row: 1;
     margin-top: 20%;
     margin-bottom: 15%;
+    width: 66%;
+    padding-left: 18%;
 }
 
 .project-2-code {
     display: grid;
-    border: 5px solid purple;
     grid-column: 3;
     grid-row: 1;
+    width: 66%;
+    padding-left: 18%;
 }
 
 .project-2-img img {
     display: flex;
     max-height: 350px;
-    border: 5px solid black;
     grid-row: 1;
     grid-column: 1/ span 2;
 }
 
 .project-3-text {
     display: grid;
-    border: 5px solid white;
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .project-3-demo {
     display: grid;
-    border: 5px solid orange;
     grid-column: 3;
     grid-row: 1;
     margin-top: 20%;
     margin-bottom: 15%;
+    width: 66%;
+    padding-left: 18%;
 }
 
 .project-3-code {
     display: grid;
-    border: 5px solid purple;
     grid-column: 3;
     grid-row: 1;
+    width: 66%;
+    padding-left: 18%;
 }
 
 .project-3-img img {
     display: flex;
     max-height: 350px;
-    border: 5px solid black;
     grid-row: 1;
     grid-column: 1/ span 2;
+}
+
+.project-buttons div button {
+    padding: 4px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.demo-button button{
+    background-color: var(--secondary-color);
+    color: azure;
+}
+
+.demo-button button:hover {
+    background-color: azure;
+    color: var(--secondary-color);
+}
+
+.code-button button {
+    background-color: var(--primary-color);
+    color: azure;
+}
+
+.code-button button:hover {
+    background-color: azure;
+    color: var(--primary-color);
 }
 
 .contact {
@@ -314,4 +361,44 @@ footer {
 footer div {
     line-height: 1.5;
     text-align: right;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero-form {
+        width: 100%;
+    }
+
+    .about {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
