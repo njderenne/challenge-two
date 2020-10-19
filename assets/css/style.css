@@ -414,7 +414,39 @@ footer h3 {
 
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 20px 20px;
+    }
+    
+    header nav ul li {
+        padding: 0 10px;
+    }
+    
+    header nav ul li a {
+        padding: 10px 8px;
+    }
+
+    .project-right-img img {
+        display: grid;
+        max-height: 260px;
+    }
+
+    .project-left-img img {
+        display: grid;
+        max-height: 260px;
+    }
+
+    .contact-form form {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1 / 4;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     header {
         padding-bottom: 0;
         justify-content: center;
