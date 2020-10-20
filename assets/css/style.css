@@ -495,6 +495,14 @@ footer h3 {
         width: 80%;
     }
 
+    .my-projects h2 {
+        font-size: 48px;
+        width: 88%;
+        text-align: center;
+        border-bottom: 5px solid white;
+        /* margin: 200px auto; */
+    }
+
     .project {
         margin: 0px auto 35px auto;
         width: 90%;
@@ -505,25 +513,13 @@ footer h3 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
     }
-    
-    .my-projects h2 {
-        font-size: 48px;
-        width: 88%;
-        text-align: center;
-        border-bottom: 5px solid white;
-        margin: 0 6% 10% 6%;
-    }
-    
-
-
-
-
 
     .project-1 {
         display: grid;
         grid-row: 2;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 0.5fr 1.25fr 0.5fr;
+        margin-top: 0;
     }
     
     .project-left-img img {
@@ -644,9 +640,73 @@ footer h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 0.5fr 1.25fr 0.5fr;
     }
+
+    .contact {
+        padding-bottom: 70px;
+        margin: 10px 6% 25px 6%;
+    }
+    
+    .contact h2 {
+        font-size: 48px;
+        text-align: center;
+        border-bottom: 5px solid white;
+        margin: 0 0 40px 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background-color: var(--primary-color);
+    }
+    
+    .contact-form {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 35px;
+        padding-bottom: 25px;
+        background: var(--secondary-color);
+        border-radius: 10px;
+        margin: 0 6% 0 6%;
+    }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    header nav ul {
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    header nav ul li {
+        padding: 8px 4px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .project-left-img img, .project-right-img img {
+        width: 90%;
+    }
+
+    .contact-form form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
     header nav ul li {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -656,8 +716,7 @@ footer h3 {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        margin-left: 30px;
-        width: 200%;
+        width: 100%;
     }
 
     .contact-form input, .contact-form textarea {
