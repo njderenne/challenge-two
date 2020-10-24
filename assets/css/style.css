@@ -500,7 +500,7 @@ footer h3 {
         width: 88%;
         text-align: center;
         border-bottom: 5px solid white;
-        /* margin: 200px auto; */
+        margin: 0px auto;
     }
 
     .project {
