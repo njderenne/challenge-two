@@ -297,6 +297,7 @@ header nav ul li a:hover {
     grid-row: 4;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 0.25fr 1fr 0.5fr;
+    display: none;
 }
 
 .demo-btn {
