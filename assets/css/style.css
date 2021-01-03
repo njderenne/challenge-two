@@ -347,6 +347,23 @@ a, a:hover, a:focus, a:active, a:link {
     margin: 0 6% 0 6%;
 }
 
+.contact-information {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin: 0 6% 0 6%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.contact-information p {
+    margin: 15px 40% 15px 40%;
+}
+
+.contact-information p span {
+    font-weight: bold;
+}
+
 .contact-form form {
     display: grid;
     grid-row: 1;
